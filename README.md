@@ -1,36 +1,54 @@
-# 📚 Book Recommender System
+#  Book Recommender System
 
-A machine learning-based system that recommends books to users based on their preferences using collaborative filtering and content-based filtering.
+A machine learning-based system that recommends books using collaborative filtering and content-based filtering techniques.
 
 ---
 
-## 🚀 Features
+##  Features
 - Personalized book recommendations.
-- Uses collaborative filtering & content-based filtering.
-- Trained model stored externally for easy download.
-- Simple and interactive UI.
+- Hybrid filtering approach (collaborative + content-based).
+- Easy-to-use Streamlit interface for interaction.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Language:** Python  
 - **Libraries:** Pandas, NumPy, Scikit-learn, Streamlit  
-- **Dataset:** Book Ratings & Metadata dataset (from Kaggle)
+- **Dataset:** Book-Crossing dataset (Kaggle)
 
 ---
 
-## 📂 Datasets & Model Files
-Due to file size limitations, the dataset and trained model files are stored in Google Drive.
+##  Datasets & Model Files  
+Due to file size constraints, the dataset and trained model are hosted on Google Drive:
 
-- **Dataset:** [📥 Download Here](https://drive.google.com/drive/folders/1y8SFSMuUHEd9jPt11o3peK8O3pXwthEQ?usp=drive_link)
-- **Trained Model (.pkl):** [📥 Download Here](https://drive.google.com/drive/folders/1y8SFSMuUHEd9jPt11o3peK8O3pXwthEQ?usp=drive_link)
+[ Download Dataset & Model ](https://drive.google.com/drive/folders/1y8SFSMuUHEd9jPt11o3peK8O3pXwthEQ?usp=drive_link)
 
-> **Instructions:** After downloading, place the files in the `data/` and `models/` folders before running the project.
+> After downloading, place your files into the following directories:
+> - Dataset (e.g., `.csv` files) → `data/`  
+> - Trained model (`.pkl`) → `models/`
 
 ---
 
-## ⚙️ Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/book-recommender-system.git
-   cd book-recommender-system
+##  Installation & Usage
+
+```bash
+git clone https://github.com/faizaan90/Book-Recommendor-System.git
+cd Book-Recommendor-System
+
+# (Recommended) Set up a virtual environment:
+python -m venv venv
+# Activate it:
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+# source venv/bin/activate
+
+# Install dependencies:
+pip install -r requirements.txt
+
+# Ensure you’ve downloaded and placed the dataset and model correctly.
+pip install streamlit
+streamlit run app.py
+
+#Screenshot
+<img width="1248" height="854" alt="image" src="https://github.com/user-attachments/assets/bd9f3656-23f3-4529-b03c-e5b80ce77a1f" />
